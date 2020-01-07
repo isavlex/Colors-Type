@@ -1,16 +1,11 @@
 extends layouts/main
-//- include ../components/test/test
 
 block varibles
-    -var pageTitle = 'Test'
+    -var pageTitle = 'Colors & Type'
     -var cssPath = '../static/scss/main.scss'
 
 block content
-    .wrap
-        .row
-            .col
-                a(href="#")
-                    +icon("logo")
+    +header()
     .wrap.content
         .row
             .col
