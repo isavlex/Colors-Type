@@ -1,0 +1,108 @@
+@import 'normalize';
+@import '../../components/components';
+@import 'vars';
+@import 'fonts';
+@import 'grid';
+@import 'typography';
+
+.test-two {
+    color: green;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+  }
+
+  *,
+  *::before,
+  *::after { box-sizing: border-box; }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ul[class],
+  ol[class],
+  li,
+  figure,
+  figcaption,
+  blockquote,
+  dl,
+  dd { 
+    margin: 0; 
+}
+
+input,
+button,
+textarea,
+select { font: inherit; }
+
+@include make-wrap();
+@include make-row();
+@include get-adaptive($grid-breakpoints, $wrap-max-widths);
+
+.icon-logo {
+    width: 48px;
+    height: 48px;
+    margin: 30px 0 0 15px;
+}
+
+.content {
+    padding: 60px 9% 0 8%;
+}
+
+.mb50-indent {
+    margin-bottom: 50px;
+}
+
+.mb20-indent {
+    margin-bottom: 20px;
+}
+
+.ml13-indent {
+    margin-left: 13px;
+}
+
+.v-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box {
+    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+}
+
+.dark-shade100 {
+    background-color: $dark-shade-100;
+}
+
+.dark-shade75 {
+    background-color: $dark-shade-75;
+}
+
+.dark-shade50 {
+    background-color: $dark-shade-50;
+}
+
+.dark-shade25 {
+    background-color: $dark-shade-25;
+}
+
+.dark-shade5 {
+    background-color: $dark-shade-5;
+}
+
+.purple {
+    background-color: #BC9CFF;
+}
+
+.green {
+    background-color: #6FCF97;
+}

@@ -1,0 +1,77 @@
+extends layouts/main
+//- include ../components/test/test
+
+block varibles
+    -var pageTitle = 'Test'
+    -var cssPath = '../static/scss/main.scss'
+
+block content
+    .wrap
+        .row
+            .col
+                a(href="#")
+                    +icon("logo")
+    .wrap.content
+        .row
+            .col
+                .row.mb20-indent
+                    .col-2
+                        .box.dark-shade100
+                    .col-5.v-center
+                        h2.h-text--q.ml13-indent Dark Shade 100% <span class="text--qnorm">#1F2041</span>
+                .row.mb20-indent
+                    .col-2
+                        .box.dark-shade75
+                    .col-5.v-center
+                        h2.h-text--q.ml13-indent Dark Shade 75% <span class="text--qnorm">#1F2041</span>
+                .row.mb20-indent
+                    .col-2
+                        .box.dark-shade50
+                    .col-5.v-center
+                        h2.h-text--q.ml13-indent Dark Shade 50% <span class="text--qnorm">#1F2041</span>
+                .row.mb20-indent
+                    .col-2
+                        .box.dark-shade25
+                    .col-5.v-center
+                        h2.h-text--q.ml13-indent Dark Shade 25% <span class="text--qnorm">#1F2041</span>
+                .row.mb20-indent
+                    .col-2
+                        .box.dark-shade5
+                    .col-4.v-center
+                        h2.h-text--q.ml13-indent Dark Shade 5% <span class="text--qnorm">#1F2041</span>
+                .row.mb20-indent
+                    .col-2
+                        .box.purple
+                    .col-3.v-center
+                        h2.h-text--q.ml13-indent Purple <span class="text--qnorm">#BC9CFF</span>
+                .row.mb20-indent
+                    .col-2
+                        .box.green
+                    .col-3.v-center
+                        h2.h-text--q.ml13-indent Green <span class="text--qnorm">#6FCF97</span>
+                        
+            .col
+                .row.mb50-indent
+                    .col-4.text-r
+                        h1.h-text--m-light H1
+                    .col-8
+                        h1.h-text--q This one is the sub-section or widget title
+                .row.mb50-indent
+                    .col-4.text-r
+                        h2.h-text--m-light H2
+                    .col-8
+                        h2.h-text--q Next one is the item title inside widgets
+                .row.mb50-indent
+                    .col-4.text-r
+                        h3.h-text--m-light H3
+                    .col-8        
+                        h3.h-text--m-dark This is a label or CTA text
+                .row.mb50-indent
+                    .col-4.text-r
+                        p.p-text.p-text--light Body
+                    .col-8
+                        p.p-text This is the body text which is used for most of the design, like paragraphs, lists, etc.
+                
+                
+block scripts
+    script(src="../static/js/main.js")
