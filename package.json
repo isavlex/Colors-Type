@@ -16,8 +16,8 @@
   },
   "scripts": {
     "start": "parcel src/pug/index.pug --open",
-    "clean": "rm -rf dist/*",
-    "build:parcel": "parcel build src/pug/index.pug",
+    "clean": "rm -rf docs/* dist/*",
+    "build:parcel": "parcel build src/pug/index.pug -d docs --public-url ./",
     "build": "npm run clean && npm run build:parcel"
   },
   "keywords": [],
