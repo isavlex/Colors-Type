@@ -113,6 +113,7 @@ $wrap-max-widths: (
             .col-#{$bp-n}-#{$i} {
                 @extend %cols;
             }
+
         }
         //column and wrap with media queries
         @media only screen and (min-width: #{$bp-v}) {
@@ -125,6 +126,18 @@ $wrap-max-widths: (
                 .order-#{$bp-n}-#{$i} {
                     order: $i;
                 }
+            }
+        }
+
+        @media only screen and (max-width: #{$bp-v}) {
+            .#{$bp-n}-v-center {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .#{$bp-n}-h-right {
+                display: flex;
+                justify-content: flex-end;
             }
         }
 

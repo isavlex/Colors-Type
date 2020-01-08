@@ -4,6 +4,7 @@
 @import 'fonts';
 @import 'grid';
 @import 'typography';
+@import 'colors';
 
 .test-two {
     color: green;
@@ -66,6 +67,8 @@ select { font: inherit; }
     justify-content: center;
 }
 
+
+
 .box {
     margin-right: 10px;
     width: 70px;
@@ -73,30 +76,10 @@ select { font: inherit; }
     border-radius: 6px;
 }
 
-.dark-shade100 {
-    background-color: $dark-shade-100;
-}
 
-.dark-shade75 {
-    background-color: $dark-shade-75;
-}
 
-.dark-shade50 {
-    background-color: $dark-shade-50;
-}
-
-.dark-shade25 {
-    background-color: $dark-shade-25;
-}
-
-.dark-shade5 {
-    background-color: $dark-shade-5;
-}
-
-.purple {
-    background-color: #BC9CFF;
-}
-
-.green {
-    background-color: #6FCF97;
+@media only screen and (max-width: $tablet) {
+    .md-mb-indent {
+        margin-bottom: 67px;
+    }
 }
